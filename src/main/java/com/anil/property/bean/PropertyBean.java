@@ -12,10 +12,20 @@ public class PropertyBean {
 	private String user;
 	private String password;
 	private String url;
+	private String environmentProp;
+
+	public String getEnvironmentProp() {
+		return environmentProp;
+	}
+
+	public void setEnvironmentProp(String environmentProp) {
+		this.environmentProp = environmentProp;
+	}
 
 	@Override
 	public String toString() {
-		return "PropertyBean [user=" + user + ", password=" + password + ", url=" + url + "]";
+		return "PropertyBean [user=" + user + ", password=" + password + ", url=" + url + ", environmentProp="
+				+ environmentProp + "]";
 	}
 
 	public String getUser() {
